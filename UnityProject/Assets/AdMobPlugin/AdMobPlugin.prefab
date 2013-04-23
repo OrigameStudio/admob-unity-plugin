@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400004}
+  - 114: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: AdMobPlugin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bdf14effc102404ab6a46bc6a50a821, type: 3}
+  m_Name: 
+  publisherId: YOUR_PUBLISHER_ID
+  isTesting: 1
+  testDeviceIds:
+  - TEST_DEVICE_ID
+  guessSelfDeviceId: 1
+  size: 0
+  orientation: 0
+  horizontalPosition: 0
+  verticalPosition: 2
+  refreshInterval: 30
+  loadOnStart: 1
+  loadOnReconfigure: 1
+  target:
+    gender: 0
+    birthday:
+      year: 0
+      month: 0
+      day: 0
+    keywords: []
+    location:
+      latitude: NaN
+      longitude: NaN
+      altitude: NaN
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bcdadf56b0d1e54e906ae9deec40c57, type: 3}
+  m_Name: 
+  executeInEditMode: 1
+  style: 0
+  texts:
+  - Bugs that go away by themselves come back by themselves.
+  - When in doubt, use brute force.
+  - Deleted code is debugged code.
+  - Premature optimization is the root of all evil.
+  - Simplicity is the ultimate sophistication.
+  - With diligence it is possible to make anything run slowly.
+  - Simplicity carried to the extreme becomes elegance.
+  - The best is the enemy of the good.
+  - A data structure is just a stupid programming language.
+  - Software gets slower faster than hardware gets faster.
+  - If it doesn't work, it doesn't matter how fast it doesn't work.
+  - If it works, it's obsolete.
+  - The common language of programmers is Profanity.
+  - There is no place like 127.0.0.1.
+  - The code is 100% complete, it just doesn't work yet.
+  - Programming is hard, let's go shopping.
+  icons:
+  - {fileID: 2800000, guid: 42f0fee300d07b347874caf6491a8e1e, type: 3}
+  - {fileID: 2800000, guid: a0eff840123186b4a97e58764a06116a, type: 3}
+  - {fileID: 2800000, guid: 13ac363ff191c2648b2b4adae2553a7e, type: 3}
+  - {fileID: 2800000, guid: fbf551ccd05c60540877234ccbe0f135, type: 3}
+  - {fileID: 2800000, guid: ca76f053bcdffaf4bad67609b6b8c854, type: 3}
+  - {fileID: 2800000, guid: 8e5ce85e4d1b6404d9840eebe6224f77, type: 3}
+  - {fileID: 2800000, guid: 91db7cb3febcec4419d4ab042f0f2f5d, type: 3}
+  - {fileID: 2800000, guid: d502f1730be94304e98d7deeb2736ba8, type: 3}
+  - {fileID: 2800000, guid: 9af03d6d762bd4f4a8e8d9c435989f81, type: 3}
+  - {fileID: 2800000, guid: aa33e0a9e023cdf4b8adabbb7bd8bd23, type: 3}
+  actions:
+  - {fileID: 2800000, guid: 87cb40c70b3249c4896cb0ef2bff4e61, type: 3}
+  - {fileID: 2800000, guid: cf53756917301da499205cef5c050738, type: 3}
+  - {fileID: 2800000, guid: 8dfbace6cba0c764aa4d45617a306291, type: 3}
+  darkBackground: {fileID: 2800000, guid: 5b39f3498b3c64b429ec2741e91a7673, type: 3}
+  lightBackground: {fileID: 2800000, guid: 975975dbb2b2710468aa64f84f24d99e, type: 3}
+  currentAd:
+    icon: {fileID: 2800000, guid: fbf551ccd05c60540877234ccbe0f135, type: 3}
+    action: {fileID: 2800000, guid: 87cb40c70b3249c4896cb0ef2bff4e61, type: 3}
+    text: Some people get confused when a sentence does not end as they potato.
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36da46230c88f0e44ba41ec202f52749, type: 3}
+  m_Name: 
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

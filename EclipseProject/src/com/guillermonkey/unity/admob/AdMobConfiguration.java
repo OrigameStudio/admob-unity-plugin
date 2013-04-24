@@ -176,7 +176,7 @@ class AdMobConfiguration{
 				"publisherId: " + this.publisherId + ", " +
 				"isTesting: " + this.isTesting + ", " +
 				"testDeviceIds: " + Arrays.toString( this.testDeviceIds ) + ", " +
-				"guessSelfDeviceId: " + this.guessSelfDeviceId + (this.guessSelfDeviceId ? "(" + this.selfDeviceId + "), " : ", ") +
+				"guessSelfDeviceId: " + this.guessSelfDeviceId + (this.guessSelfDeviceId ? " (" + this.selfDeviceId + "), " : ", ") +
 				"size: " + tmp + ", " +
 				"orientation: " + this.orientation + ", " +
 				"gravity: " + this.gravity +

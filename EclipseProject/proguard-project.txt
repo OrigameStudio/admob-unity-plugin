@@ -23,9 +23,9 @@
 -outjars      bin/proguard-admob-unity-plugin.jar
 #-libraryjars  <java.home>/lib/rt.jar
 #-libraryjars  /libs/android-support-v4.jar
--libraryjars  "C:/Program Files (x86)/Android/android-sdk/platforms/android-16/android.jar"
--libraryjars  /libs/GoogleAdMobAdsSdk-6.3.1.jar
--libraryjars  /libs/Unity-3.5-androidplayer.jar
+-libraryjars  <android.sdk>/platforms/android-16/android.jar
+-libraryjars  /libs/GoogleAdMobAdsSdk-6.4.1.jar
+-libraryjars  /libs/Unity-4.1-androidplayer.jar
 -printusage   bin/proguard.txt
 -printmapping bin/proguard-out.map
 

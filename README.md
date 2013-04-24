@@ -1,6 +1,6 @@
 # AdMobPlugin #
 
-> Monetize your Unity games from today!
+> Monetize your Unity games as from today!
 
 ## Overview ##
 
@@ -14,7 +14,9 @@ You can choose size and position, refresh interval and switch on the test mode w
 
 Please read this document in order to understand how this extension works and how you can integrate it into your own games. You must also understand the terms of the [license](#license) this plugin is released under.
 
-**AdMobPlugin** connects to native libraries which control the banners. This libraries must be kept under `Plugins/Android` along with your assets.
+First of all, you need an **AdMob** site ID or **DoubleClick for Publishers** account.
+
+**AdMobPlugin** connects to native libraries which control the banners. This libraries must be kept under `Plugins/Android` along with your assets. Current **AdMob Ads SDK** native library is version 6.4.1 (works on Android 1.5 or later).
 
 In addition, a default *Android Manifest* is provided. You might need to modify it to ensure your game is configured properly.
 

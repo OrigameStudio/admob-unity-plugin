@@ -34,6 +34,7 @@ public class AdMobPlugin : MonoBehaviour{
 	public AdVerticalPosition	verticalPosition	= AdVerticalPosition.BOTTOM;
 	public float				refreshInterval		= 30;
 	public bool					loadOnStart			= true;
+	public bool					setTargetOnStart	= false;
 	public bool					loadOnReconfigure	= true;
 	public AdMobTarget			target				= new AdMobTarget();
 
@@ -46,6 +47,11 @@ public class AdMobPlugin : MonoBehaviour{
 		if(this.loadOnStart){
 
 			this.Load();
+		}
+
+		if(this.setTargetOnStart){
+
+			this.SetTarget();
 		}
 
 		this.StartCoroutine( this.Refresh() );
@@ -110,7 +116,7 @@ public class AdMobPlugin : MonoBehaviour{
 	public void Load(){
 
 		this.plugin.Call("load");
-		
+
 		this.Show();
 	}
 

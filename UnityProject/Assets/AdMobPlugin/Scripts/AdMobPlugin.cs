@@ -110,6 +110,8 @@ public class AdMobPlugin : MonoBehaviour{
 	public void Load(){
 
 		this.plugin.Call("load");
+		
+		this.Show();
 	}
 
 	public void Show(){
@@ -134,6 +136,11 @@ public class AdMobPlugin : MonoBehaviour{
 	public int GetReceived(){
 
 		return( this.plugin.Call<int>("getReceived") );
+	}
+
+	void OnDestroy(){
+
+		this.Hide();
 	}
 
 #else

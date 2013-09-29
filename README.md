@@ -93,7 +93,7 @@ To enable targeting, you must set appropriate values to any of these fields:
   * `keywords`: a set of words related to your game.
   * `location`: the user's *geolocation*.
 
-You then need to invoke the method `SetTarget`. All subsequent ad requests will use this information.
+You then need to invoke the method `SetTarget`. All subsequent ad requests will use this information. The target can also be set automatically by switching on the field `setTargetOnStart `.
 
 ## Debug ##
 
@@ -145,6 +145,7 @@ A sample scene is provided for convenience so you can test this extension off-th
   * `verticalPosition`: choose from `CENTER_VERTICAL`, `TOP` and `BOTTOM`.
   * `refreshInterval`: specify the amount of time (in seconds) to wait for a new ad to be loaded.
   * `loadOnStart`: if enabled, the first ad will be loaded automatically.
+  * `setTargetOnStart`: if enabled, the target will be set automatically.
   * `loadOnReconfigure`: if enabled, an ad will be loaded automatically after reconfiguring size or position.
   * `target`
     * `gender`: user's sex.

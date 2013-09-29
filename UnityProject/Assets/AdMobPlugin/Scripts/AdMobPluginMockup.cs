@@ -61,6 +61,11 @@ public class AdMobPluginMockup : MonoBehaviour{
 
 		if( this.plugin.IsVisible() && Application.isEditor && (Application.isPlaying || this.executeInEditMode) ){
 
+			if(this.currentAd == null){
+
+				this.GenerateRandomAd();
+			}
+
 			this.DrawAd();
 		}
 
@@ -239,7 +244,6 @@ public class AdMobPluginMockup : MonoBehaviour{
  * helper classes and enums
  */
 
-[System.Serializable]
 public class AdMockup{
 
 	public Texture	icon;
